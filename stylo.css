@@ -1,0 +1,742 @@
+/* ==========================================================
+   RESET GERAL
+========================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Poppins",sans-serif;
+    background-color:#030013;
+
+    /* Fundo do site */
+    background-image:
+    linear-gradient(rgba(3,0,19,.85),rgba(3,0,19,.90)),
+    url(capadef23.png);
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+    color:#ffffff;
+}
+
+/* ==========================================================
+   CABEÇALHO
+========================================================== */
+
+header{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 8%;
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    z-index:999;
+
+    background:rgba(0,0,0,.25);
+
+    backdrop-filter:blur(18px);
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+/* ==========================================================
+   LOGO
+========================================================== */
+
+.logo_60px{
+
+    width:70px;
+
+    transition:.4s;
+
+}
+
+.logo_60px:hover{
+
+    transform:rotate(-5deg) scale(1.08);
+
+}
+
+/* ==========================================================
+   MENU
+========================================================== */
+
+nav ul{
+
+    display:flex;
+
+    gap:25px;
+
+    list-style:none;
+
+    padding:15px 30px;
+
+    border-radius:50px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+/* Itens do menu */
+
+nav ul li{
+
+    cursor:pointer;
+
+    font-weight:500;
+
+    color:white;
+
+    transition:.3s;
+
+}
+
+nav ul li:hover{
+
+    color:#d4af37;
+
+    transform:translateY(-2px);
+
+}
+
+/* ==========================================================
+   CONFIGURAÇÃO DAS SEÇÕES
+========================================================== */
+
+section{
+
+    width:100%;
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    padding:120px 8%;
+
+}
+
+/* ==========================================================
+   PRIMEIRA SEÇÃO
+========================================================== */
+
+.seção1{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+}
+
+/* ==========================================================
+   CONTEÚDO PRINCIPAL
+========================================================== */
+
+.conteudoprincipal{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:20px;
+
+    max-width:800px;
+
+}
+
+.conteudoprincipal h1{
+
+    font-size:70px;
+
+    color:white;
+
+    font-weight:700;
+
+}
+
+.conteudoprincipal p{
+
+    font-size:22px;
+
+    color:#d4af37;
+
+    letter-spacing:2px;
+
+}
+
+/* ==========================================================
+   BOTÕES
+========================================================== */
+
+.divbotoes{
+
+    display:flex;
+
+    gap:20px;
+
+    margin-top:20px;
+
+}
+
+.botao{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    padding:15px 35px;
+
+    background:#d4af37;
+
+    color:black;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    font-size:17px;
+
+    transition:.3s;
+
+}
+
+.botao:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 25px rgba(212,175,55,.5);
+
+}
+.setadourada{
+
+    width:20px;
+
+}
+
+/* ==========================================================
+   TÍTULOS DAS SEÇÕES
+========================================================== */
+
+h2{
+
+    font-size:45px;
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+    color:#ffffff;
+
+    position:relative;
+
+}
+
+/* Linha dourada abaixo do título */
+
+h2::after{
+
+    content:"";
+
+    width:90px;
+
+    height:4px;
+
+    background:#d4af37;
+
+    display:block;
+
+    margin:15px auto 0;
+
+    border-radius:20px;
+
+}
+
+/* ==========================================================
+   ÁREA DOS CARDS
+========================================================== */
+
+.divCcards{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:30px;
+
+    margin-bottom:100px;
+
+}
+
+/* ==========================================================
+   CARD
+========================================================== */
+
+.card{
+
+    width:320px;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.06);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.10);
+
+    text-align:center;
+
+    transition:.4s;
+
+    cursor:pointer;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.30);
+
+}
+
+/* Hover do Card */
+
+.card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.45);
+
+    border:1px solid rgba(212,175,55,.50);
+
+}
+
+/* ==========================================================
+   IMAGEM DOS CARDS
+========================================================== */
+
+.ninha6{
+
+    width:70px;
+
+    margin-bottom:20px;
+
+}
+
+/* ==========================================================
+   TÍTULO DO CARD
+========================================================== */
+
+.card h3{
+
+    color:#d4af37;
+
+    font-size:24px;
+
+    margin-bottom:20px;
+
+}
+
+/* ==========================================================
+   TEXTO DO CARD
+========================================================== */
+
+.card p{
+
+    color:#d8d8d8;
+
+    font-size:15px;
+
+    line-height:28px;
+
+}
+
+/* ==========================================================
+   SEÇÃO TRABALHOS
+========================================================== */
+
+.divimagens{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:25px;
+
+    margin-top:50px;
+
+}
+
+/* ==========================================================
+   IMAGENS
+========================================================== */
+
+.divimagens img{
+
+    width:280px;
+
+    height:200px;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+    transition:.4s;
+
+    cursor:pointer;
+
+    border:2px solid transparent;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+
+}
+
+/* Hover das imagens */
+
+.divimagens img:hover{
+
+    transform:scale(1.08);
+
+    border:2px solid #d4af37;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.50);
+
+}
+
+/* ==========================================================
+   PARÁGRAFOS GERAIS
+========================================================== */
+
+section p{
+
+    max-width:900px;
+
+    margin:0 auto;
+
+    text-align:center;
+
+    line-height:32px;
+
+    color:#d8d8d8;
+
+    font-size:18px;
+
+}
+
+/* =======================================================
+   RESPONSIVIDADE
+   Faz o site se adaptar a tablets e celulares
+======================================================= */
+
+@media (max-width: 992px){
+
+    header{
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .conteudoprincipal h1{
+        font-size: 55px;
+    }
+
+    .conteudoprincipal p{
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    section{
+        padding: 100px 25px;
+    }
+
+    .conteudoprincipal h1{
+        font-size: 42px;
+    }
+
+    .conteudoprincipal p{
+        font-size:18px;
+    }
+
+    .divbotoes{
+        flex-direction:column;
+        width:100%;
+    }
+
+    .botao{
+
+    width:100%;
+    }
+
+    .card{
+        width:100%;
+    }
+
+    .divimagens img{
+        width:100%;
+        height:220px;
+    }
+
+}
+
+@media (max-width:480px){
+
+    .logo_60px{
+        width:55px;
+    }
+
+    nav ul{
+        gap:15px;
+        padding:12px 18px;
+    }
+
+    nav ul li{
+        font-size:14px;
+    }
+
+    .conteudoprincipal h1{
+        font-size:34px;
+    }
+
+    h2{
+        font-size:32px;
+    }
+
+}
+
+/* =======================================================
+   ANIMAÇÃO AO CARREGAR A PÁGINA
+======================================================= */
+
+.conteudoprincipal{
+
+    animation: aparecer 1s ease;
+
+}
+
+@keyframes aparecer{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* =======================================================
+   BARRA DE ROLAGEM
+======================================================= */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#08041d;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#d4af37;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#f5cb54;
+
+}
+
+/* =======================================================
+   SELEÇÃO DE TEXTO
+======================================================= */
+
+::selection{
+
+    background:#d4af37;
+
+    color:black;
+
+}
+
+/* =======================================================
+   LINKS
+======================================================= */
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+/* =======================================================
+   TRANSIÇÃO SUAVE
+======================================================= */
+
+*{
+
+    transition: .3s;
+
+}
+
+/* =======================================================
+   RODAPÉ (caso você adicione depois)
+======================================================= */
+
+footer{
+
+    width:100%;
+
+    padding:40px;
+
+    text-align:center;
+
+    color:#bdbdbd;
+
+    background:rgba(255,255,255,.05);
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+footer p{
+
+    font-size:15px;
+
+}
+
+/* =======================================================
+   MELHORIAS EXTRAS
+======================================================= */
+
+/* Deixa as imagens nunca passarem do tamanho do elemento */
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+/* Remove contorno azul ao clicar */
+
+button{
+
+    outline:none;
+
+}
+
+/* Efeito ao clicar no botão */
+
+button:active,
+.botao:active{
+
+    transform:scale(.96);
+
+}
+
+/* Centraliza todos os títulos */
+
+h1,h2,h3{
+
+    text-align:center;
+
+}
+
+/* Espaçamento entre os elementos */
+
+h3{
+
+    margin-bottom:15px;
+
+}
+
+p{
+
+    margin-bottom:15px;
+
+}
+
+/* =======================================================
+   FIM DO CSS
+======================================================= */
+.autor{
+    color:#d4af37;
+    font-size:18px;
+    margin-top:10px;
+    font-weight:500;
+}
+
+
